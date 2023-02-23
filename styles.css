@@ -68,12 +68,16 @@ body {
   position: relative;
 }
 
-body[data-icon="pattern-bottom"]::before {
-  content: "";
-  background-image: url(images/bg-pattern-bottom-desktop.svg);
-  width: 1085px;
-  height: 673px;
+.pattern-btm {
   position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.pattern-top {
+  position: absolute;
+  top: -60px;
+  left: 0;
 }
 
 .testimonials {
