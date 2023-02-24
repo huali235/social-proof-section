@@ -72,16 +72,18 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: -1;
 }
 
 .pattern-top {
   position: absolute;
-  top: -60px;
+  top: 0;
   left: 0;
+  z-index: -1;
 }
 
 .testimonials {
-  max-width: 120rem;
+  max-width: 105rem;
   margin: 0 auto;
 }
 
@@ -116,12 +118,13 @@ header p {
   flex-direction: column;
   gap: 2.4rem;
   margin-top: 2.4rem;
+  flex-wrap: wrap;
 }
 
 .rating-box {
   width: 445px;
   background-color: hsl(300, 24%, 96%);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: hsl(300, 43%, 22%);
   font-weight: 700;
   border-radius: 0.8rem;
@@ -151,6 +154,7 @@ header p {
   background-image: url(images/icon-star.svg);
   width: 17px;
   height: 16px;
+  z-index: 10;
 }
 
 .rating-text {
@@ -160,12 +164,11 @@ header p {
 .bottom-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 280px;
+  gap: 2.4rem;
 }
 
 .buyer-testimonial {
-  max-width: 350px;
-  max-height: 230px;
+  max-height: 225px;
   padding: 3.2rem 2.4rem;
   background-color: hsl(300, 43%, 22%);
   border-radius: 0.5rem;
